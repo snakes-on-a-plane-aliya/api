@@ -17,5 +17,5 @@ class SeatSerializer(serializers.ModelSerializer):
 class PassengerSerializer(serializers.ModelSerializer):
 
     class Meta:
-        fields = ('id', 'name', 'seat')
+        fields = ('name', 'seat')
         model = Passenger

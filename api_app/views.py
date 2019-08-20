@@ -22,3 +22,7 @@ class SeatDetail(generics.RetrieveUpdateAPIView):
 class PassengerList(generics.ListCreateAPIView):
     queryset = Passenger.objects.all()
     serializer_class = PassengerSerializer
+
+class PassengerDetail(generics.RetrieveUpdateAPIView):
+    queryset = Passenger.objects.all()
+    serializer_class = PassengerSerializer
