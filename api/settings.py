@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # models
     'flightseats.apps.FlightseatsConfig',
+    'api_app.apps.ApiAppConfig',
 ]
 
 MIDDLEWARE = [
