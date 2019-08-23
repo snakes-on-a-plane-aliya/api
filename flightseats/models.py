@@ -25,3 +25,17 @@ class Passenger(models.Model):
     )
     def __str__(self):
         return f'Passenger {self.name} has seat {self.seat}'
+
+class Player(models.Model):
+    name = models.CharField(max_length=256)
+    start_point = models.CharField(max_length = 256)
+
+    def __str__(self):
+        return f'name: {self.name}, start pont: {self.start_point}'
+
+class Cell(models.Model):
+    x_pos = models.CharField(max_length=256)
+    y_pos = models.CharField(max_length=256)
+
+    def __str__(self):
+        return f'x: {self.x_pos}, y: {self.y_pos}'
